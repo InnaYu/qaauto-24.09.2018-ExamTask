@@ -58,4 +58,7 @@ public class SecondResultPage extends BasePage {
         return searchResultStringList;
 
     }
+
+
+
 }

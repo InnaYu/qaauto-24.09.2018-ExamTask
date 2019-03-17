@@ -7,6 +7,7 @@ import page.FirstResultPage;
 
 import page.SecondResultPage;
 
+import java.util.Collections;
 import java.util.List;
 
 public class SearchTest extends BaseTest {
@@ -15,8 +16,8 @@ public class SearchTest extends BaseTest {
     public Object[][] ValidDataProvider() {
         return new Object[][]{
                 {"Selenium"},
-                {"SELENIUM"},
-                {"selenium"}
+                //{"SELENIUM"},
+               // {"selenium"}
         };
     }
 
@@ -40,6 +41,11 @@ public class SearchTest extends BaseTest {
                    "SearchTerm" + searchTerm+"not found");
        }
 
+       Assert.assertEquals(firstResultPage.getColorOfButton(),"rgb(0,0,255)",
+               "color is not blue");
+
+       /*
+
 
        SecondResultPage secondResultPage=firstResultPage.getNextPage();
        Assert.assertTrue(secondResultPage.isPageLoaded(),
@@ -53,6 +59,7 @@ public class SearchTest extends BaseTest {
            Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()),
                    "SearchTerm" + searchTerm+"not found");
        }
+*/
 
 
    }

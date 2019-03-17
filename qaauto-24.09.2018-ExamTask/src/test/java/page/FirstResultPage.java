@@ -70,7 +70,10 @@ public class FirstResultPage extends BasePage {
     public SecondResultPage getNextPage(){
     navigateToSecondPageButton.click();
     return new SecondResultPage(webDriver);
+    }
 
+    public String getColorOfButton(){
+        return navigateToSecondPageButton.getCssValue("background-color").toString();
 
     }
 
