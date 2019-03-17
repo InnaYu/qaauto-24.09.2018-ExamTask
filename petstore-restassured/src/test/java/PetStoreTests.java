@@ -6,9 +6,7 @@ public class PetStoreTests {
     @Test
 
     public void getPetId200(){
-       RestAssured
-                .given()
-
+                 baseSpecification()
                 .basePath(Config.GET_PET_ENDPOINT)
                 .pathParam("id",1)
 
