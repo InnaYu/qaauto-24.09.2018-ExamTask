@@ -51,4 +51,33 @@ public class PetEntity {
             "  ],\n" +
             "  \"status\": \"available\"\n" +
             "}";
+
+
+    public int getId() {
+        return id;
+    }
+
+    public Object getCategory() {
+        return category;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<String> getPhotoUrls() {
+        return photoUrls;
+    }
+
+    public List<Object> getTags() {
+        return tags;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getBody() {
+        return body;
+    }
 }
